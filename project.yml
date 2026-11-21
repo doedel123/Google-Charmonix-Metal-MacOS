@@ -1,0 +1,95 @@
+name: ChamonixSkiSim
+options:
+  bundleIdPrefix: com.chamonix
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    ARCHS: arm64
+    ONLY_ACTIVE_ARCH: YES
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    SWIFT_OBJC_BRIDGING_HEADER: Sources/Core/ShaderTypes.h
+    HEADER_SEARCH_PATHS:
+      - $(SRCROOT)/Sources/Core
+targets:
+  ChamonixSkiSim:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources
+      - path: Shaders
+        buildPhase: resources
+        type: folder
+      - path: Sources/Core/ShaderTypes.h
+        buildPhase: resources
+      - path: Resources/assets
+        buildPhase: resources
+        type: folder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.chamonix.ChamonixSkiSim
+        PRODUCT_NAME: ChamonixSkiSim
+        INFOPLIST_KEY_CFBundleDisplayName: "Chamonix Ski Sim"
+        INFOPLIST_KEY_NSHighResolutionCapable: YES
+        GENERATE_INFOPLIST_FILE: YES
+        ENABLE_HARDENED_RUNTIME: NO
+        CODE_SIGN_IDENTITY: "-"
+    dependencies:
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: AVFoundation.framework
+      - sdk: AppKit.framework
+      - sdk: SwiftUI.framework
+      - sdk: ImageIO.framework
+      - sdk: CoreGraphics.framework
+      - sdk: UniformTypeIdentifiers.framework
+  ChamonixSkiSimTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests
+      - path: Sources/Core
+      - path: Sources/Terrain
+      - path: Sources/Simulation
+      - path: Sources/Rig
+      - path: Sources/World
+      - path: Sources/PostFX
+      - path: Sources/Audio
+      - path: Shaders
+        buildPhase: resources
+        type: folder
+      - path: Sources/Core/ShaderTypes.h
+        buildPhase: resources
+      - path: Resources/assets
+        buildPhase: resources
+        type: folder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.chamonix.ChamonixSkiSimTests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_OBJC_BRIDGING_HEADER: Sources/Core/ShaderTypes.h
+        HEADER_SEARCH_PATHS:
+          - $(SRCROOT)/Sources/Core
+        CODE_SIGN_IDENTITY: "-"
+    dependencies:
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: AVFoundation.framework
+      - sdk: AppKit.framework
+      - sdk: ImageIO.framework
+      - sdk: CoreGraphics.framework
+      - sdk: UniformTypeIdentifiers.framework
+schemes:
+  ChamonixSkiSim:
+    build:
+      targets:
+        ChamonixSkiSim: all
+        ChamonixSkiSimTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - ChamonixSkiSimTests

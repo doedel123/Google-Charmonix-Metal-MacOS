@@ -1,0 +1,182 @@
+{
+  "originLat": 45.8787,
+  "originLon": 6.905,
+  "coreHalfSpan": 6400.0,
+  "outerHalfSpan": 24000.0,
+  "maxElev": 5000.0,
+  "aiguilleSpire": {
+    "x": -1431.2,
+    "z": 25.0,
+    "elev": 3718.0
+  },
+  "peaks": [
+    {
+      "name": "Mont Blanc",
+      "altLabel": "4808m",
+      "x": -3084,
+      "z": 5123,
+      "elev": 4778
+    },
+    {
+      "name": "Mont Maudit",
+      "altLabel": "4465m",
+      "x": -2224,
+      "z": 3445,
+      "elev": 4252
+    },
+    {
+      "name": "Mont Blanc du Tacul",
+      "altLabel": "4248m",
+      "x": -1286,
+      "z": 2467,
+      "elev": 4141
+    },
+    {
+      "name": "Grandes Jorasses",
+      "altLabel": "4208m",
+      "x": 6447.9,
+      "z": 1133.6,
+      "elev": 4208
+    },
+    {
+      "name": "Aiguille Verte",
+      "altLabel": "4122m",
+      "x": 5037,
+      "z": -6257,
+      "elev": 4067
+    },
+    {
+      "name": "Dent du G\u00e9ant",
+      "altLabel": "4013m",
+      "x": 3635,
+      "z": 1834,
+      "elev": 3843
+    },
+    {
+      "name": "Aiguille du Midi",
+      "altLabel": "3842m",
+      "x": -1431.2,
+      "z": 25.0,
+      "elev": 3718.0
+    },
+    {
+      "name": "Les Drus",
+      "altLabel": "3754m",
+      "x": 3952,
+      "z": -5979,
+      "elev": 3522
+    },
+    {
+      "name": "Plan de l'Aiguille",
+      "altLabel": "2317m",
+      "x": -1503,
+      "z": -2545,
+      "elev": 2283
+    },
+    {
+      "name": "Chamonix",
+      "altLabel": "1035m",
+      "x": -2759,
+      "z": -5001,
+      "elev": 1041
+    }
+  ],
+  "dropZones": [
+    {
+      "id": "vallee_blanche",
+      "name": "Vall\u00e9e Blanche \u2014 Col du Midi",
+      "subtitle": "Sweeping glacial freeride descent below Aiguille du Midi toward Dent du G\u00e9ant & Grandes Jorasses",
+      "x": -587.5,
+      "z": 172.3,
+      "elev": 3492.5,
+      "slopeDeg": 22.6,
+      "yaw": 2.06721,
+      "compass": "SE",
+      "verticalDrop": 1068.0,
+      "traceEnd": [
+        1985.6,
+        -203.4
+      ]
+    },
+    {
+      "id": "tacul_north",
+      "name": "Mont Blanc du Tacul \u2014 North Face",
+      "subtitle": "Big-mountain freeride couloir facing Aiguille du Midi, Aiguille Verte & Les Drus",
+      "x": -1522.5,
+      "z": 2222.6,
+      "elev": 4105.4,
+      "slopeDeg": 28.8,
+      "yaw": -0.41653,
+      "compass": "NW",
+      "verticalDrop": 1258.0,
+      "traceEnd": [
+        -2462.5,
+        760.7
+      ]
+    },
+    {
+      "id": "midi_north",
+      "name": "Aiguille du Midi \u2014 North Face",
+      "subtitle": "Extreme Mallory-line pitch (up to 56\u00b0) dropping 1,600 m toward the Chamonix valley floor",
+      "x": -1450.4,
+      "z": -17.7,
+      "elev": 3710.7,
+      "slopeDeg": 27.0,
+      "yaw": -1.02423,
+      "compass": "NW",
+      "verticalDrop": 1627.0,
+      "traceEnd": [
+        -2835.1,
+        -1082.9
+      ]
+    },
+    {
+      "id": "plan_aiguille",
+      "name": "Plan de l'Aiguille \u2014 Glacier to Pines",
+      "subtitle": "Granite bowls & wind lips transitioning straight into sub-alpine spruce glades",
+      "x": -1613.3,
+      "z": -2487.2,
+      "elev": 2254.5,
+      "slopeDeg": 29.7,
+      "yaw": -2.1158,
+      "compass": "SW",
+      "verticalDrop": 1043.0,
+      "traceEnd": [
+        -3327.1,
+        -2868.0
+      ]
+    },
+    {
+      "id": "cosmiques_couloir",
+      "name": "Cosmiques Couloir \u2014 Steep Chute",
+      "subtitle": "Exposed steep granite-walled chute off the Cosmiques ridge above Glacier des Bossons",
+      "x": -1502.5,
+      "z": 135.6,
+      "elev": 3677.3,
+      "slopeDeg": 37.1,
+      "yaw": -1.81089,
+      "compass": "W",
+      "verticalDrop": 1369.0,
+      "traceEnd": [
+        -2787.1,
+        -705.8
+      ]
+    },
+    {
+      "id": "glacier_rond",
+      "name": "Glacier Rond \u2014 High Powder",
+      "subtitle": "Steep high-alpine shoulder below Mont Maudit plunging down the Bossons icefall",
+      "x": -2571.9,
+      "z": 3027.2,
+      "elev": 4122.9,
+      "slopeDeg": 34.7,
+      "yaw": -0.29947,
+      "compass": "N",
+      "verticalDrop": 1014.0,
+      "traceEnd": [
+        -3095.6,
+        1743.0
+      ]
+    }
+  ]
+}

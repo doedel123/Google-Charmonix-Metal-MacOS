@@ -1,0 +1,28 @@
+{
+  "core_dem": {
+    "step": 4,
+    "res": "core_dem_res.webp",
+    "ao": "core_dem_ao.webp",
+    "esc": [
+      0,
+      5961
+    ]
+  },
+  "outer_dem": {
+    "step": 16,
+    "res": "outer_dem_res.webp",
+    "ao": "outer_dem_ao.webp",
+    "esc": [
+      0,
+      590,
+      201,
+      -132,
+      202,
+      -161,
+      2687,
+      128,
+      3198,
+      131
+    ]
+  }
+}

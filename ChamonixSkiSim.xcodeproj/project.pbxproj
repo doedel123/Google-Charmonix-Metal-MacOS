@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		055EC5C83182421E7B8FBCF3 /* TerrainRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6796D772D3BDAD4FD310B203 /* TerrainRenderer.swift */; };
+		084EB454DC9F40A33A3D2806 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = A15B523F3BE57856A94E448D /* Shaders */; };
+		0B22FD7FFF147D1BC4B2CBB0 /* AlpineProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7847832C71015B1003F0D7B /* AlpineProps.swift */; };
+		105AFD7FB882FE6A7D0F9996 /* AlpineProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7847832C71015B1003F0D7B /* AlpineProps.swift */; };
+		112FC952EE082B2414351B56 /* GameSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E79D3372A3D48A6FC0635 /* GameSimulation.swift */; };
+		1A70E26B3AC169F6309589C4 /* ShaderCompilationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203DFC8F91BDD4C264E8A21D /* ShaderCompilationTests.swift */; };
+		1AD9D756BBB4A68EC529347E /* AlpinePropsGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BDFD829301FF363AA3E747 /* AlpinePropsGeometry.swift */; };
+		1E36963782E1EEFF65F11D20 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5325207A0DA8CF74B5463A26 /* CameraController.swift */; };
+		1E571B30E51E8B0060CC23A5 /* SkyAtmosphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D709949B7FD415A2001AAF4 /* SkyAtmosphere.swift */; };
+		1F41488E5D3E0D3039CF6942 /* SnowTracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B884C2A373A9F7B2E16991F /* SnowTracks.swift */; };
+		24DFF265CABBA16338876513 /* MetalViewportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0725B141E5965D9B88D13A /* MetalViewportView.swift */; };
+		263994B5CBDD01E44AF7E002 /* ShaderLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B67757590D587533B9599 /* ShaderLibrary.swift */; };
+		26BE9E1A25E20C1F4A12F33E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84147DEEF868DECE92B59016 /* CoreGraphics.framework */; };
+		2A8E5860A69B8FF1A43DB294 /* TerrainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B649B484D5A3E72DB4E0A62 /* TerrainData.swift */; };
+		2ACEC9452B544A5FD1690CCD /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB61BB6578D67A55B5142EC /* UniformTypeIdentifiers.framework */; };
+		2E839F0798DFD221C23F0DCD /* SkiPhysics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B87CE207357C71F3235A1 /* SkiPhysics.swift */; };
+		300E68460C8CC1BCBC539F07 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB61BB6578D67A55B5142EC /* UniformTypeIdentifiers.framework */; };
+		331BB278DB821F3647E4610A /* PostOptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DE57F0FB76DCD9F760EFDD /* PostOptics.swift */; };
+		356E09DB674BB0E8D3FAD080 /* AlpineHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1437A37C54990796EEB943 /* AlpineHUDView.swift */; };
+		3888A99B86B1BE15FD0F5A45 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB049BA52369503AA4AA1881 /* AppKit.framework */; };
+		38EC67A2284B896B73DE28C0 /* TerrainRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6796D772D3BDAD4FD310B203 /* TerrainRenderer.swift */; };
+		395279D4791EA6D4E6CC9CDB /* LightingPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4F10A9E5031FF0C8B8798 /* LightingPresets.swift */; };
+		41A592949310ECDFBCFE35B4 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FA219D4BD94BD14033FE41 /* MetalKit.framework */; };
+		465EB7C0EDAD4FD42A0146A1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDDB8549A2D227CFDCC3C67 /* Metal.framework */; };
+		47D1327A953923F13ED848C5 /* SharedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF5611D78082988FD48F63 /* SharedState.swift */; };
+		50411975F8270790B9BD3000 /* CoreParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F35026DC329B7B456B69370 /* CoreParityTests.swift */; };
+		510875846BF80EFAE4083DE0 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FA219D4BD94BD14033FE41 /* MetalKit.framework */; };
+		57D1EBCFB90791455A165460 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A0AC42EDF32C77A4A87B92 /* MetalRenderer.swift */; };
+		58EA3BF24A71753E02D7E0E1 /* SnowTracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B884C2A373A9F7B2E16991F /* SnowTracks.swift */; };
+		5A10C6B0628867E051E6CE13 /* SkyAtmosphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D709949B7FD415A2001AAF4 /* SkyAtmosphere.swift */; };
+		5A6D42C7C579E1F58B06E6DF /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 63E0F33F3A0070F80B8539E7 /* assets */; };
+		5BEA12B3DB09F052F6D6720B /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = A15B523F3BE57856A94E448D /* Shaders */; };
+		5D329674415CB912EC76EEE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84147DEEF868DECE92B59016 /* CoreGraphics.framework */; };
+		5EF1D1D1F125F4237945F521 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21E6CD14D7F781531141E3C /* ImageIO.framework */; };
+		6136F106F64CBE57EB1B8DD5 /* AlpineAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91175B542030A382044D4C5 /* AlpineAudioEngine.swift */; };
+		680B5D8575F5B3B5D03C7295 /* AlpineAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91175B542030A382044D4C5 /* AlpineAudioEngine.swift */; };
+		6845505AD58D1F1ABD6DCF95 /* TextureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDD9E1CC0A830E1BE45206 /* TextureLoader.swift */; };
+		6904544B73DF2359C9A02C5C /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FA484E96DB7F28F4502A0 /* MathUtils.swift */; };
+		69826BC31D3CCE95F19AC85D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 63E0F33F3A0070F80B8539E7 /* assets */; };
+		75F16EF83756643F9260CB21 /* CourseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDE9ABFF5D99C02500D54D /* CourseManager.swift */; };
+		798229B69C4D98AA7AFDE678 /* SkiRigRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7A14E17499228506665C5 /* SkiRigRenderer.swift */; };
+		7A613B503729BA4E76F6BB23 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FA484E96DB7F28F4502A0 /* MathUtils.swift */; };
+		80EB012F22E4E0F7450B149A /* SharedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF5611D78082988FD48F63 /* SharedState.swift */; };
+		85245CFB13A356D250A1F6B7 /* MeshPrimitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90933EE2928800D6B266AD29 /* MeshPrimitives.swift */; };
+		8DDF11A975692B79D5945283 /* SkiRigGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D6ECC0473E3D128D41282 /* SkiRigGeometry.swift */; };
+		90F24D18035DAEEA02CB5F4D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB049BA52369503AA4AA1881 /* AppKit.framework */; };
+		93F89CC95757C53A831C0E42 /* MeshPrimitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90933EE2928800D6B266AD29 /* MeshPrimitives.swift */; };
+		95B4F6D4EAB8897B33E28A42 /* TextureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDD9E1CC0A830E1BE45206 /* TextureLoader.swift */; };
+		9BB1188507ED907DA1E6A0DE /* Particles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C409C191FBE30ADBAFFA66F /* Particles.swift */; };
+		9D3096C4EA3E5CBF28D7FF46 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D623F890B9833578F443B35 /* AppState.swift */; };
+		9FF1BC4E92B5BC2783258646 /* SkiRigAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8215959A89DE88F8CA4BC43 /* SkiRigAnimator.swift */; };
+		A09981EEB96A8D22C463FBEC /* ChamonixSkiSimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3733F0A33D5B855C242FB3 /* ChamonixSkiSimApp.swift */; };
+		A1104F7E2C743AB6E38B33AE /* SkiPhysics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B87CE207357C71F3235A1 /* SkiPhysics.swift */; };
+		A42AC20E5FC16AC2CFDBDC35 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = 9881E69DAC2CAD5EC481C2E8 /* ShaderTypes.h */; };
+		A72FA19DAFA7CA7B78330CC3 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = 9881E69DAC2CAD5EC481C2E8 /* ShaderTypes.h */; };
+		A91DDD0162DB9D233D8AF8D2 /* SkiRigGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D6ECC0473E3D128D41282 /* SkiRigGeometry.swift */; };
+		B1FED10C418B22F6EFC3A334 /* TerrainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B649B484D5A3E72DB4E0A62 /* TerrainData.swift */; };
+		B5FAE29A6A1082E938083FE7 /* AlpinePropsGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BDFD829301FF363AA3E747 /* AlpinePropsGeometry.swift */; };
+		B6224AC16ABA3017C8288B9F /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDDB8549A2D227CFDCC3C67 /* Metal.framework */; };
+		B8A698B6E4797E16EFF2BCDD /* Particles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C409C191FBE30ADBAFFA66F /* Particles.swift */; };
+		BF7C46B050286692485F5049 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5325207A0DA8CF74B5463A26 /* CameraController.swift */; };
+		C2D0DB125DDF631EE717D64D /* SkiRigAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8215959A89DE88F8CA4BC43 /* SkiRigAnimator.swift */; };
+		C7935F0632FAF8A0BA601249 /* TerrainParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD98BF5EA7402A787FB664 /* TerrainParityTests.swift */; };
+		CA0D8A3459AC2AAE62D82CD7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96CF3AEBBE5E9806F0DB115 /* AVFoundation.framework */; };
+		D15DB4534BF09C6CF44815F2 /* CourseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDE9ABFF5D99C02500D54D /* CourseManager.swift */; };
+		D507E66A9B44852E3711A0C7 /* ShaderLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B67757590D587533B9599 /* ShaderLibrary.swift */; };
+		D51B87062C004627555511CE /* PhysicsParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7CE563BFB1482B9BBC255 /* PhysicsParityTests.swift */; };
+		D5F090BBE290920C5D1C049B /* GameSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E79D3372A3D48A6FC0635 /* GameSimulation.swift */; };
+		D6D8E77C56619226FD692F75 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433B47CECA6CB946B5AC4494 /* SwiftUI.framework */; };
+		D72E32DF624025A93D835AA8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21E6CD14D7F781531141E3C /* ImageIO.framework */; };
+		DDC5C4D7A2C51856D32B5380 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A0AC42EDF32C77A4A87B92 /* MetalRenderer.swift */; };
+		F8E49729C40E7993B4BADBDC /* PostOptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DE57F0FB76DCD9F760EFDD /* PostOptics.swift */; };
+		F9A89573A925A9FCC721431A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96CF3AEBBE5E9806F0DB115 /* AVFoundation.framework */; };
+		FB7BB7B3DC8EBC5D9FE96DA1 /* SkiRigRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7A14E17499228506665C5 /* SkiRigRenderer.swift */; };
+		FC1002654B59B18B82FEFD21 /* LightingPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4F10A9E5031FF0C8B8798 /* LightingPresets.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02F7A14E17499228506665C5 /* SkiRigRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiRigRenderer.swift; sourceTree = "<group>"; };
+		046E79D3372A3D48A6FC0635 /* GameSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSimulation.swift; sourceTree = "<group>"; };
+		1B649B484D5A3E72DB4E0A62 /* TerrainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainData.swift; sourceTree = "<group>"; };
+		1D709949B7FD415A2001AAF4 /* SkyAtmosphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyAtmosphere.swift; sourceTree = "<group>"; };
+		203DFC8F91BDD4C264E8A21D /* ShaderCompilationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderCompilationTests.swift; sourceTree = "<group>"; };
+		21CF376EC7E3D4E165FB6F54 /* ChamonixSkiSimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChamonixSkiSimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BDFD829301FF363AA3E747 /* AlpinePropsGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlpinePropsGeometry.swift; sourceTree = "<group>"; };
+		2ADF5611D78082988FD48F63 /* SharedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedState.swift; sourceTree = "<group>"; };
+		35F7CE563BFB1482B9BBC255 /* PhysicsParityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsParityTests.swift; sourceTree = "<group>"; };
+		433B47CECA6CB946B5AC4494 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4BBDD9E1CC0A830E1BE45206 /* TextureLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureLoader.swift; sourceTree = "<group>"; };
+		4C409C191FBE30ADBAFFA66F /* Particles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particles.swift; sourceTree = "<group>"; };
+		4D7A439BA18CF93DB3EBF914 /* ChamonixSkiSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChamonixSkiSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1437A37C54990796EEB943 /* AlpineHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlpineHUDView.swift; sourceTree = "<group>"; };
+		5325207A0DA8CF74B5463A26 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		5D623F890B9833578F443B35 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		63E0F33F3A0070F80B8539E7 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = Resources/assets; sourceTree = SOURCE_ROOT; };
+		6796D772D3BDAD4FD310B203 /* TerrainRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainRenderer.swift; sourceTree = "<group>"; };
+		6B0725B141E5965D9B88D13A /* MetalViewportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewportView.swift; sourceTree = "<group>"; };
+		6F35026DC329B7B456B69370 /* CoreParityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreParityTests.swift; sourceTree = "<group>"; };
+		73A0AC42EDF32C77A4A87B92 /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		84147DEEF868DECE92B59016 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8B884C2A373A9F7B2E16991F /* SnowTracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowTracks.swift; sourceTree = "<group>"; };
+		8C3733F0A33D5B855C242FB3 /* ChamonixSkiSimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamonixSkiSimApp.swift; sourceTree = "<group>"; };
+		90933EE2928800D6B266AD29 /* MeshPrimitives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshPrimitives.swift; sourceTree = "<group>"; };
+		969D6ECC0473E3D128D41282 /* SkiRigGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiRigGeometry.swift; sourceTree = "<group>"; };
+		9881E69DAC2CAD5EC481C2E8 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		9B1FA484E96DB7F28F4502A0 /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
+		9FDDB8549A2D227CFDCC3C67 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		A15B523F3BE57856A94E448D /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = SOURCE_ROOT; };
+		C5DE57F0FB76DCD9F760EFDD /* PostOptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostOptics.swift; sourceTree = "<group>"; };
+		CB049BA52369503AA4AA1881 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CC0B67757590D587533B9599 /* ShaderLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderLibrary.swift; sourceTree = "<group>"; };
+		D6FA219D4BD94BD14033FE41 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		D8215959A89DE88F8CA4BC43 /* SkiRigAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiRigAnimator.swift; sourceTree = "<group>"; };
+		D8A4F10A9E5031FF0C8B8798 /* LightingPresets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingPresets.swift; sourceTree = "<group>"; };
+		DDB61BB6578D67A55B5142EC /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		E21E6CD14D7F781531141E3C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E46B87CE207357C71F3235A1 /* SkiPhysics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiPhysics.swift; sourceTree = "<group>"; };
+		E4FD98BF5EA7402A787FB664 /* TerrainParityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainParityTests.swift; sourceTree = "<group>"; };
+		E91175B542030A382044D4C5 /* AlpineAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlpineAudioEngine.swift; sourceTree = "<group>"; };
+		F7847832C71015B1003F0D7B /* AlpineProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlpineProps.swift; sourceTree = "<group>"; };
+		F96CF3AEBBE5E9806F0DB115 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FEEDE9ABFF5D99C02500D54D /* CourseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3060D6C3D1F3268FEE8D4121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6224AC16ABA3017C8288B9F /* Metal.framework in Frameworks */,
+				41A592949310ECDFBCFE35B4 /* MetalKit.framework in Frameworks */,
+				CA0D8A3459AC2AAE62D82CD7 /* AVFoundation.framework in Frameworks */,
+				90F24D18035DAEEA02CB5F4D /* AppKit.framework in Frameworks */,
+				D6D8E77C56619226FD692F75 /* SwiftUI.framework in Frameworks */,
+				D72E32DF624025A93D835AA8 /* ImageIO.framework in Frameworks */,
+				5D329674415CB912EC76EEE4 /* CoreGraphics.framework in Frameworks */,
+				2ACEC9452B544A5FD1690CCD /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D020849D093A7B447F8CD75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465EB7C0EDAD4FD42A0146A1 /* Metal.framework in Frameworks */,
+				510875846BF80EFAE4083DE0 /* MetalKit.framework in Frameworks */,
+				F9A89573A925A9FCC721431A /* AVFoundation.framework in Frameworks */,
+				3888A99B86B1BE15FD0F5A45 /* AppKit.framework in Frameworks */,
+				5EF1D1D1F125F4237945F521 /* ImageIO.framework in Frameworks */,
+				26BE9E1A25E20C1F4A12F33E /* CoreGraphics.framework in Frameworks */,
+				300E68460C8CC1BCBC539F07 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E30E9D64010A2DC586A16DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D7A439BA18CF93DB3EBF914 /* ChamonixSkiSim.app */,
+				21CF376EC7E3D4E165FB6F54 /* ChamonixSkiSimTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B1BBF208A07C8A4217A6583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB049BA52369503AA4AA1881 /* AppKit.framework */,
+				F96CF3AEBBE5E9806F0DB115 /* AVFoundation.framework */,
+				84147DEEF868DECE92B59016 /* CoreGraphics.framework */,
+				E21E6CD14D7F781531141E3C /* ImageIO.framework */,
+				9FDDB8549A2D227CFDCC3C67 /* Metal.framework */,
+				D6FA219D4BD94BD14033FE41 /* MetalKit.framework */,
+				433B47CECA6CB946B5AC4494 /* SwiftUI.framework */,
+				DDB61BB6578D67A55B5142EC /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3175AD7DA21E964C6646F3D1 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E91175B542030A382044D4C5 /* AlpineAudioEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		406C8825A83CB4D941A3D5AC /* Terrain */ = {
+			isa = PBXGroup;
+			children = (
+				1D709949B7FD415A2001AAF4 /* SkyAtmosphere.swift */,
+				8B884C2A373A9F7B2E16991F /* SnowTracks.swift */,
+				1B649B484D5A3E72DB4E0A62 /* TerrainData.swift */,
+				6796D772D3BDAD4FD310B203 /* TerrainRenderer.swift */,
+			);
+			path = Terrain;
+			sourceTree = "<group>";
+		};
+		59AEC7C216248D315463BBF6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4F10A9E5031FF0C8B8798 /* LightingPresets.swift */,
+				9B1FA484E96DB7F28F4502A0 /* MathUtils.swift */,
+				90933EE2928800D6B266AD29 /* MeshPrimitives.swift */,
+				73A0AC42EDF32C77A4A87B92 /* MetalRenderer.swift */,
+				CC0B67757590D587533B9599 /* ShaderLibrary.swift */,
+				9881E69DAC2CAD5EC481C2E8 /* ShaderTypes.h */,
+				2ADF5611D78082988FD48F63 /* SharedState.swift */,
+				4BBDD9E1CC0A830E1BE45206 /* TextureLoader.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		99AD0C21F3F5D3CDD8A0AD30 /* Rig */ = {
+			isa = PBXGroup;
+			children = (
+				D8215959A89DE88F8CA4BC43 /* SkiRigAnimator.swift */,
+				969D6ECC0473E3D128D41282 /* SkiRigGeometry.swift */,
+				02F7A14E17499228506665C5 /* SkiRigRenderer.swift */,
+			);
+			path = Rig;
+			sourceTree = "<group>";
+		};
+		A698DA742AF35DFF5214A4CE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6F35026DC329B7B456B69370 /* CoreParityTests.swift */,
+				35F7CE563BFB1482B9BBC255 /* PhysicsParityTests.swift */,
+				203DFC8F91BDD4C264E8A21D /* ShaderCompilationTests.swift */,
+				E4FD98BF5EA7402A787FB664 /* TerrainParityTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B3212357BBF6E38BEBC15913 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4F1437A37C54990796EEB943 /* AlpineHUDView.swift */,
+				5D623F890B9833578F443B35 /* AppState.swift */,
+				8C3733F0A33D5B855C242FB3 /* ChamonixSkiSimApp.swift */,
+				6B0725B141E5965D9B88D13A /* MetalViewportView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B5C7FC7C33068AFB556A20A7 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				5325207A0DA8CF74B5463A26 /* CameraController.swift */,
+				FEEDE9ABFF5D99C02500D54D /* CourseManager.swift */,
+				046E79D3372A3D48A6FC0635 /* GameSimulation.swift */,
+				E46B87CE207357C71F3235A1 /* SkiPhysics.swift */,
+			);
+			path = Simulation;
+			sourceTree = "<group>";
+		};
+		BFDE8C0070020EAF960DD253 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B3212357BBF6E38BEBC15913 /* App */,
+				3175AD7DA21E964C6646F3D1 /* Audio */,
+				59AEC7C216248D315463BBF6 /* Core */,
+				E2E5B0AFA6D66434A42F7FC6 /* PostFX */,
+				99AD0C21F3F5D3CDD8A0AD30 /* Rig */,
+				B5C7FC7C33068AFB556A20A7 /* Simulation */,
+				406C8825A83CB4D941A3D5AC /* Terrain */,
+				E7B10F8BDD528B26CB374AE9 /* World */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D61C216077C9B394FD52F14F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63E0F33F3A0070F80B8539E7 /* assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2E5B0AFA6D66434A42F7FC6 /* PostFX */ = {
+			isa = PBXGroup;
+			children = (
+				C5DE57F0FB76DCD9F760EFDD /* PostOptics.swift */,
+			);
+			path = PostFX;
+			sourceTree = "<group>";
+		};
+		E7B10F8BDD528B26CB374AE9 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				F7847832C71015B1003F0D7B /* AlpineProps.swift */,
+				24BDFD829301FF363AA3E747 /* AlpinePropsGeometry.swift */,
+				4C409C191FBE30ADBAFFA66F /* Particles.swift */,
+			);
+			path = World;
+			sourceTree = "<group>";
+		};
+		FD367F92D9FA32D11241B05D = {
+			isa = PBXGroup;
+			children = (
+				A15B523F3BE57856A94E448D /* Shaders */,
+				D61C216077C9B394FD52F14F /* Resources */,
+				BFDE8C0070020EAF960DD253 /* Sources */,
+				A698DA742AF35DFF5214A4CE /* Tests */,
+				1B1BBF208A07C8A4217A6583 /* Frameworks */,
+				0E30E9D64010A2DC586A16DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9A2EBF20848078B5E14996E /* ChamonixSkiSimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 738181162A819C1B5F9901F3 /* Build configuration list for PBXNativeTarget "ChamonixSkiSimTests" */;
+			buildPhases = (
+				398F4438F98BA4C28F7D49F8 /* Sources */,
+				8F598DE6EFCA7E533CC6B24F /* Resources */,
+				3D020849D093A7B447F8CD75 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChamonixSkiSimTests;
+			packageProductDependencies = (
+			);
+			productName = ChamonixSkiSimTests;
+			productReference = 21CF376EC7E3D4E165FB6F54 /* ChamonixSkiSimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1FAC7BD6B98092D6F8FC928 /* ChamonixSkiSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7912E247BF8AA337B34ECB49 /* Build configuration list for PBXNativeTarget "ChamonixSkiSim" */;
+			buildPhases = (
+				E8497B2F5A29E5CD2237C5E6 /* Sources */,
+				C632583B53F4070464C75E83 /* Resources */,
+				3060D6C3D1F3268FEE8D4121 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChamonixSkiSim;
+			packageProductDependencies = (
+			);
+			productName = ChamonixSkiSim;
+			productReference = 4D7A439BA18CF93DB3EBF914 /* ChamonixSkiSim.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F545F06119E8C053412B402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = A921AF8CA41D9ACFFCFFD8F4 /* Build configuration list for PBXProject "ChamonixSkiSim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FD367F92D9FA32D11241B05D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1FAC7BD6B98092D6F8FC928 /* ChamonixSkiSim */,
+				A9A2EBF20848078B5E14996E /* ChamonixSkiSimTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F598DE6EFCA7E533CC6B24F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72FA19DAFA7CA7B78330CC3 /* ShaderTypes.h in Resources */,
+				084EB454DC9F40A33A3D2806 /* Shaders in Resources */,
+				5A6D42C7C579E1F58B06E6DF /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C632583B53F4070464C75E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42AC20E5FC16AC2CFDBDC35 /* ShaderTypes.h in Resources */,
+				5BEA12B3DB09F052F6D6720B /* Shaders in Resources */,
+				69826BC31D3CCE95F19AC85D /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		398F4438F98BA4C28F7D49F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680B5D8575F5B3B5D03C7295 /* AlpineAudioEngine.swift in Sources */,
+				0B22FD7FFF147D1BC4B2CBB0 /* AlpineProps.swift in Sources */,
+				B5FAE29A6A1082E938083FE7 /* AlpinePropsGeometry.swift in Sources */,
+				1E36963782E1EEFF65F11D20 /* CameraController.swift in Sources */,
+				50411975F8270790B9BD3000 /* CoreParityTests.swift in Sources */,
+				D15DB4534BF09C6CF44815F2 /* CourseManager.swift in Sources */,
+				112FC952EE082B2414351B56 /* GameSimulation.swift in Sources */,
+				FC1002654B59B18B82FEFD21 /* LightingPresets.swift in Sources */,
+				7A613B503729BA4E76F6BB23 /* MathUtils.swift in Sources */,
+				85245CFB13A356D250A1F6B7 /* MeshPrimitives.swift in Sources */,
+				DDC5C4D7A2C51856D32B5380 /* MetalRenderer.swift in Sources */,
+				9BB1188507ED907DA1E6A0DE /* Particles.swift in Sources */,
+				D51B87062C004627555511CE /* PhysicsParityTests.swift in Sources */,
+				F8E49729C40E7993B4BADBDC /* PostOptics.swift in Sources */,
+				1A70E26B3AC169F6309589C4 /* ShaderCompilationTests.swift in Sources */,
+				263994B5CBDD01E44AF7E002 /* ShaderLibrary.swift in Sources */,
+				80EB012F22E4E0F7450B149A /* SharedState.swift in Sources */,
+				2E839F0798DFD221C23F0DCD /* SkiPhysics.swift in Sources */,
+				9FF1BC4E92B5BC2783258646 /* SkiRigAnimator.swift in Sources */,
+				8DDF11A975692B79D5945283 /* SkiRigGeometry.swift in Sources */,
+				FB7BB7B3DC8EBC5D9FE96DA1 /* SkiRigRenderer.swift in Sources */,
+				5A10C6B0628867E051E6CE13 /* SkyAtmosphere.swift in Sources */,
+				1F41488E5D3E0D3039CF6942 /* SnowTracks.swift in Sources */,
+				B1FED10C418B22F6EFC3A334 /* TerrainData.swift in Sources */,
+				C7935F0632FAF8A0BA601249 /* TerrainParityTests.swift in Sources */,
+				055EC5C83182421E7B8FBCF3 /* TerrainRenderer.swift in Sources */,
+				6845505AD58D1F1ABD6DCF95 /* TextureLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8497B2F5A29E5CD2237C5E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6136F106F64CBE57EB1B8DD5 /* AlpineAudioEngine.swift in Sources */,
+				356E09DB674BB0E8D3FAD080 /* AlpineHUDView.swift in Sources */,
+				105AFD7FB882FE6A7D0F9996 /* AlpineProps.swift in Sources */,
+				1AD9D756BBB4A68EC529347E /* AlpinePropsGeometry.swift in Sources */,
+				9D3096C4EA3E5CBF28D7FF46 /* AppState.swift in Sources */,
+				BF7C46B050286692485F5049 /* CameraController.swift in Sources */,
+				A09981EEB96A8D22C463FBEC /* ChamonixSkiSimApp.swift in Sources */,
+				75F16EF83756643F9260CB21 /* CourseManager.swift in Sources */,
+				D5F090BBE290920C5D1C049B /* GameSimulation.swift in Sources */,
+				395279D4791EA6D4E6CC9CDB /* LightingPresets.swift in Sources */,
+				6904544B73DF2359C9A02C5C /* MathUtils.swift in Sources */,
+				93F89CC95757C53A831C0E42 /* MeshPrimitives.swift in Sources */,
+				57D1EBCFB90791455A165460 /* MetalRenderer.swift in Sources */,
+				24DFF265CABBA16338876513 /* MetalViewportView.swift in Sources */,
+				B8A698B6E4797E16EFF2BCDD /* Particles.swift in Sources */,
+				331BB278DB821F3647E4610A /* PostOptics.swift in Sources */,
+				D507E66A9B44852E3711A0C7 /* ShaderLibrary.swift in Sources */,
+				47D1327A953923F13ED848C5 /* SharedState.swift in Sources */,
+				A1104F7E2C743AB6E38B33AE /* SkiPhysics.swift in Sources */,
+				C2D0DB125DDF631EE717D64D /* SkiRigAnimator.swift in Sources */,
+				A91DDD0162DB9D233D8AF8D2 /* SkiRigGeometry.swift in Sources */,
+				798229B69C4D98AA7AFDE678 /* SkiRigRenderer.swift in Sources */,
+				1E571B30E51E8B0060CC23A5 /* SkyAtmosphere.swift in Sources */,
+				58EA3BF24A71753E02D7E0E1 /* SnowTracks.swift in Sources */,
+				2A8E5860A69B8FF1A43DB294 /* TerrainData.swift in Sources */,
+				38EC67A2284B896B73DE28C0 /* TerrainRenderer.swift in Sources */,
+				95B4F6D4EAB8897B33E28A42 /* TextureLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		087DD165A9169A6809B7EA72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Sources/Core",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/Core/ShaderTypes.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		485BDC8920B2BE01BE795645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Sources/Core",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamonix.ChamonixSkiSimTests;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/Core/ShaderTypes.h;
+			};
+			name = Debug;
+		};
+		69B2A80AF7F491435379C98C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Sources/Core",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/Core/ShaderTypes.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C90C2AC2F0875FAA69E820E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chamonix Ski Sim";
+				INFOPLIST_KEY_NSHighResolutionCapable = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamonix.ChamonixSkiSim;
+				PRODUCT_NAME = ChamonixSkiSim;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D7DAEFBF397AD24EFD6DCAC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chamonix Ski Sim";
+				INFOPLIST_KEY_NSHighResolutionCapable = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamonix.ChamonixSkiSim;
+				PRODUCT_NAME = ChamonixSkiSim;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E7791D68BCAE5BD036432FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Sources/Core",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamonix.ChamonixSkiSimTests;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/Core/ShaderTypes.h;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		738181162A819C1B5F9901F3 /* Build configuration list for PBXNativeTarget "ChamonixSkiSimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485BDC8920B2BE01BE795645 /* Debug */,
+				E7791D68BCAE5BD036432FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7912E247BF8AA337B34ECB49 /* Build configuration list for PBXNativeTarget "ChamonixSkiSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90C2AC2F0875FAA69E820E8 /* Debug */,
+				D7DAEFBF397AD24EFD6DCAC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A921AF8CA41D9ACFFCFFD8F4 /* Build configuration list for PBXProject "ChamonixSkiSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087DD165A9169A6809B7EA72 /* Debug */,
+				69B2A80AF7F491435379C98C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F545F06119E8C053412B402 /* Project object */;
+}
